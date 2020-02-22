@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9979E7AB240116A800CF562C /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9979E7AA240116A800CF562C /* VKSdkFramework.framework */; };
 		997DD28D240007D000B1B7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DD28C240007D000B1B7B6 /* AppDelegate.swift */; };
 		997DD28F240007D000B1B7B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DD28E240007D000B1B7B6 /* ViewController.swift */; };
 		997DD292240007D000B1B7B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997DD290240007D000B1B7B6 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9979E7A6240112D200CF562C /* VKSdkFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VKSdkFramework.h; path = "Carthage/Checkouts/vk-ios-sdk/library/DynamicFramework/VKSdkFramework.h"; sourceTree = "<group>"; };
+		9979E7A8240114D000CF562C /* Checkouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Checkouts; path = Carthage/Checkouts; sourceTree = "<group>"; };
+		9979E7AA240116A800CF562C /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
 		997DD289240007D000B1B7B6 /* My_VK_News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_VK_News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		997DD28C240007D000B1B7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		997DD28E240007D000B1B7B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9979E7AB240116A800CF562C /* VKSdkFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9979E7A5240112D100CF562C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9979E7AA240116A800CF562C /* VKSdkFramework.framework */,
+				9979E7A8240114D000CF562C /* Checkouts */,
+				9979E7A6240112D200CF562C /* VKSdkFramework.h */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		997DD280240007D000B1B7B6 = {
 			isa = PBXGroup;
 			children = (
 				997DD28B240007D000B1B7B6 /* My_VK_News */,
 				997DD28A240007D000B1B7B6 /* Products */,
+				9979E7A5240112D100CF562C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,6 +299,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = My_VK_News/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +320,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = My_VK_News/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
