@@ -90,6 +90,7 @@
 				997DD285240007D000B1B7B6 /* Sources */,
 				997DD286240007D000B1B7B6 /* Frameworks */,
 				997DD287240007D000B1B7B6 /* Resources */,
+				9979E7AC2401171900CF562C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -145,6 +146,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9979E7AC2401171900CF562C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/VKSdkFramework.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		997DD285240007D000B1B7B6 /* Sources */ = {
