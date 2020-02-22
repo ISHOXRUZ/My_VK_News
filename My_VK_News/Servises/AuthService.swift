@@ -17,7 +17,6 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     override init() {
         vkSdk = VKSdk.initialize(withAppId: appId)
         super.init()
-        print("VKSdknitialize")
         vkSdk.register(self)
         vkSdk.uiDelegate = self
     }

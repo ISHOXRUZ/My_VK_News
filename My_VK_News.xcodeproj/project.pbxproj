@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		9979E7AB240116A800CF562C /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9979E7AA240116A800CF562C /* VKSdkFramework.framework */; };
 		9979E7AE24011B9A00CF562C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979E7AD24011B9A00CF562C /* AuthService.swift */; };
+		9979E7B12401256600CF562C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979E7B02401256600CF562C /* AuthViewController.swift */; };
+		9979E7B32401259100CF562C /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9979E7B22401259100CF562C /* AuthViewController.storyboard */; };
 		997DD28D240007D000B1B7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DD28C240007D000B1B7B6 /* AppDelegate.swift */; };
 		997DD294240007D100B1B7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997DD293240007D100B1B7B6 /* Assets.xcassets */; };
 		997DD297240007D100B1B7B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997DD295240007D100B1B7B6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9979E7A6240112D200CF562C /* VKSdkFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VKSdkFramework.h; path = "Carthage/Checkouts/vk-ios-sdk/library/DynamicFramework/VKSdkFramework.h"; sourceTree = "<group>"; };
-		9979E7A8240114D000CF562C /* Checkouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Checkouts; path = Carthage/Checkouts; sourceTree = "<group>"; };
 		9979E7AA240116A800CF562C /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
 		9979E7AD24011B9A00CF562C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9979E7B02401256600CF562C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		9979E7B22401259100CF562C /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		997DD289240007D000B1B7B6 /* My_VK_News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_VK_News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		997DD28C240007D000B1B7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		997DD293240007D100B1B7B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				9979E7AA240116A800CF562C /* VKSdkFramework.framework */,
-				9979E7A8240114D000CF562C /* Checkouts */,
-				9979E7A6240112D200CF562C /* VKSdkFramework.h */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -54,6 +54,15 @@
 				9979E7AD24011B9A00CF562C /* AuthService.swift */,
 			);
 			path = Servises;
+			sourceTree = "<group>";
+		};
+		9979E7B4240125B800CF562C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9979E7B02401256600CF562C /* AuthViewController.swift */,
+				9979E7B22401259100CF562C /* AuthViewController.storyboard */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		997DD280240007D000B1B7B6 = {
@@ -77,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				997DD28C240007D000B1B7B6 /* AppDelegate.swift */,
+				9979E7B4240125B800CF562C /* Auth */,
 				9979E7AF24011BA600CF562C /* Servises */,
 				997DD293240007D100B1B7B6 /* Assets.xcassets */,
 				997DD295240007D100B1B7B6 /* LaunchScreen.storyboard */,
@@ -145,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				997DD297240007D100B1B7B6 /* LaunchScreen.storyboard in Resources */,
+				9979E7B32401259100CF562C /* AuthViewController.storyboard in Resources */,
 				997DD294240007D100B1B7B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9979E7AE24011B9A00CF562C /* AuthService.swift in Sources */,
+				9979E7B12401256600CF562C /* AuthViewController.swift in Sources */,
 				997DD28D240007D000B1B7B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
