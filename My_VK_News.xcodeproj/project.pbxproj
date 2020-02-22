@@ -11,6 +11,9 @@
 		9979E7AE24011B9A00CF562C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979E7AD24011B9A00CF562C /* AuthService.swift */; };
 		9979E7B12401256600CF562C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979E7B02401256600CF562C /* AuthViewController.swift */; };
 		9979E7B32401259100CF562C /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9979E7B22401259100CF562C /* AuthViewController.storyboard */; };
+		9979E7B624013E0600CF562C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979E7B524013E0600CF562C /* FeedViewController.swift */; };
+		9979E7B824013FDA00CF562C /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9979E7B724013FDA00CF562C /* FeedViewController.storyboard */; };
+		9979E7BB2401477500CF562C /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979E7BA2401477500CF562C /* UIViewController + Storyboard.swift */; };
 		997DD28D240007D000B1B7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DD28C240007D000B1B7B6 /* AppDelegate.swift */; };
 		997DD294240007D100B1B7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997DD293240007D100B1B7B6 /* Assets.xcassets */; };
 		997DD297240007D100B1B7B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997DD295240007D100B1B7B6 /* LaunchScreen.storyboard */; };
@@ -21,6 +24,9 @@
 		9979E7AD24011B9A00CF562C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9979E7B02401256600CF562C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		9979E7B22401259100CF562C /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		9979E7B524013E0600CF562C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9979E7B724013FDA00CF562C /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		9979E7BA2401477500CF562C /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		997DD289240007D000B1B7B6 /* My_VK_News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_VK_News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		997DD28C240007D000B1B7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		997DD293240007D100B1B7B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +71,23 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		9979E7B924013FFD00CF562C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				9979E7B524013E0600CF562C /* FeedViewController.swift */,
+				9979E7B724013FDA00CF562C /* FeedViewController.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		9979E7BC2401478F00CF562C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9979E7BA2401477500CF562C /* UIViewController + Storyboard.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		997DD280240007D000B1B7B6 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				997DD28C240007D000B1B7B6 /* AppDelegate.swift */,
+				9979E7BC2401478F00CF562C /* Helpers */,
+				9979E7B924013FFD00CF562C /* Feed */,
 				9979E7B4240125B800CF562C /* Auth */,
 				9979E7AF24011BA600CF562C /* Servises */,
 				997DD293240007D100B1B7B6 /* Assets.xcassets */,
@@ -157,6 +182,7 @@
 				997DD297240007D100B1B7B6 /* LaunchScreen.storyboard in Resources */,
 				9979E7B32401259100CF562C /* AuthViewController.storyboard in Resources */,
 				997DD294240007D100B1B7B6 /* Assets.xcassets in Resources */,
+				9979E7B824013FDA00CF562C /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9979E7AE24011B9A00CF562C /* AuthService.swift in Sources */,
+				9979E7BB2401477500CF562C /* UIViewController + Storyboard.swift in Sources */,
 				9979E7B12401256600CF562C /* AuthViewController.swift in Sources */,
+				9979E7B624013E0600CF562C /* FeedViewController.swift in Sources */,
 				997DD28D240007D000B1B7B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

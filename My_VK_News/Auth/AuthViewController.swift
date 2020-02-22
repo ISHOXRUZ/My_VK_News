@@ -9,15 +9,20 @@
 import UIKit
 
 class AuthViewController: UIViewController {
+    
+    private var authService: AuthService!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       // authService = AuthService()
+        authService = AppDelegate.shared().authService
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func signInTouch() {
-        
+        authService.wakeUpSession()
     }
     
 }
